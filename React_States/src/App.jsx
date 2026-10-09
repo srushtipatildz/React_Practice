@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Ludo from "./Ludo";
+import Todo from "./Todo";
 function Counter(){
  let[count,setCount]= useState(0);
  function incCount(){
@@ -20,7 +21,12 @@ function Counter(){
 }
 function App(){
 return(
-   <Ludo></Ludo>
+   
+ <div>
+   <Ludo/>
+   <Todo/>
+ </div>
+   
 )
 }
 export {Counter,App};
